@@ -1,0 +1,106 @@
+@import url(./themeSlider.css);
+
+.portfolio-header-main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--side-padding);
+    background: var(--primary-bg-color);
+    box-shadow:  var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    z-index: 100;
+}
+.portfolio-header-toggle-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 50vh;
+    background: var(--primary-bg-color);
+    color: #fff;
+    transform: translateX(90vw);
+    transition: all .3s;
+    padding: 1rem;
+    border-radius: 10px;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      
+      
+    
+}
+.block-background{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-bg-color);
+    opacity: .6;
+}
+.display-none{
+    display: block;
+}
+.portfolio-header-toggle-container a{
+    /* padding: 2rem 0; */
+}
+.toggle-container-close-btn{
+    padding: .5rem;
+    background: transparent;
+    border-radius: 5px;
+    color: red !important;
+    border: 1px solid red !important;
+    margin-bottom: 3rem;
+}
+.portfolio-header-toggle-container .portfolio-header-menus-item{
+    margin: 1rem 0;
+}
+
+
+.toggle-container-open{
+    transform: translateX(0);
+}
+
+.portfolio-header-menus{
+    display: flex;
+    align-items: center;
+}
+.portfolio-header-menus-item{
+    margin-right: 2.5rem;
+    cursor: pointer;
+    transition: .2s all;
+    color: var(--primary-text-color);
+}
+.portfolio-header-menus-item-download-cv{
+    padding: .5rem 1rem;
+    background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+    color: #fff;
+    border-radius: 50px;
+    transition: all .3s;
+    text-align: center;
+}
+.portfolio-header-menus-item:hover{
+    color: var(--primary-hover-text-color);  
+}
+.portfolio-header-menus-item-download-cv:hover{
+    transform: scale(1.2);
+}
+.portfolio-header-menus-mobile{
+    display: none;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .portfolio-header-menus{
+        display: none;
+    }
+    .portfolio-header-menus-mobile{
+        display: flex;
+    }
+   
+}

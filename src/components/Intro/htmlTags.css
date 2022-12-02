@@ -1,0 +1,51 @@
+
+
+.structure-label{
+    padding: 20px 0 ;
+}
+.structure-label::after{
+    content: '';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+}
+
+.label-html-open::after{
+    content: '<html>';
+}
+.label-body-open::after{
+    content: '<body>';
+    margin-left: 1rem;
+}
+.label-html-close::after{
+    content: '</html>';
+}
+.label-body-close::after{
+    content: '</body>';
+    margin-left: 1rem;
+}
+.label-h1-open::after{
+    content: '<h1>';
+    margin-left: 2rem;
+}
+.label-h1-close::after{
+    content: '</h1>';
+    margin-left: 2rem;
+}
+
+.label-role-open::after{
+    content: '<role>';
+}
+.label-role-close::after{
+    content: '</role>';
+}
+
+.label-contact-open::after{
+    content: '<contact>';
+    margin-left: 2rem;
+}
+.label-contact-close::after{
+    content: '</contact>';
+    margin-left: 2rem;
+}

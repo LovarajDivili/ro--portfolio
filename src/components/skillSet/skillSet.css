@@ -1,0 +1,128 @@
+.SkillSet-section-main{
+    width: 100%;
+    padding: 5rem calc(var(--side-padding)+10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+.SkillSet-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #4ca5ff;
+    padding: 3rem;
+}
+.SkillSet-border-box{
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+    border: 1px solid #4ca5ff;
+    background: var(--primary-bg-color);
+    transition: all .5s
+   ;
+}
+.SkillSet-border-box:hover{
+    transform: rotate(360deg);
+}
+.box-small{
+    width: 15px  !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+.border-box-1{
+    top: -15px;
+    left: -15px;
+    cursor:nw-resize
+}
+.border-box-2{
+    top: -15px;
+    right: -15px;
+    cursor:ne-resize
+}
+.border-box-3{
+    bottom: -15px;
+    left: -15px;
+    cursor:sw-resize
+}
+.border-box-4{
+    bottom: -15px;
+    right: -15px;
+    cursor:se-resize
+}
+.SkillSet-top-title{
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.SkillSet-title{
+    font-size: 3em;
+    line-height: 65px;
+    color: var(--primary-hover-text-color);
+}
+.SkillSet-items{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.SkillSet-items-left{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+}
+.SkillSet-items-right{
+    display: none;
+    grid-template-columns: auto auto auto auto; 
+}
+.SkillSet-item{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin:  2rem 3rem;
+    transition: all .3s;
+    cursor: default;
+}
+.SkillSet-item:hover{
+    transform: scale(1.5);
+    color: var(--primary-hover-text-color);
+}
+.SkillSet-item i{
+   font-size: 40px;
+}
+.SkillSet-item img{
+   width: 40px;
+}
+.SkillSet-item span{
+    margin-top: .8rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .SkillSet-title{
+        margin-top: 1rem;
+        font-size: 1em;
+        line-height: 1rem;
+        display: flex;
+    }
+    .SkillSet-title span{
+      margin-left: 10px;
+    }
+    .SkillSet-section-main{
+        padding: 3rem 3rem;
+    }
+    .SkillSet-items-left{
+        grid-template-columns: auto auto ; 
+    }
+    .SkillSet-top-title {
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .SkillSet-items{
+        margin-top: 1rem;
+    }
+}

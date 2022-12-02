@@ -1,0 +1,112 @@
+@import url(./htmlTags.css);
+
+.Into-section-main{
+    padding: 0 var(  --side-padding);
+    padding-top:  6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-section-right h1{
+    font-family: Poppins,sans-serif;
+    padding-left: 3rem;
+    margin-top: 18px;
+    font-size: 60px;
+    line-height: 65px;
+    color: var(--primary-hover-text-color);
+}
+.text-gradient{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+    -webkit-background-clip: text;
+}
+.text-gradient-2{
+    -webkit-text-fill-color: transparent;
+    background:  linear-gradient(90deg,#ff7170 2.34%,#ffe57f 100.78%);
+    -webkit-background-clip: text;
+}
+.designation-div, .contact-div, .social-div{
+    margin-top: 1rem;
+    font-family: Poppins,sans-serif;
+    padding-left: 2rem;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--primary-hover-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.designation-div .item, .contact-div .item, .social-div .item{
+padding: 0 10px;
+}
+
+.contact-div ._structure-label,.social-div ._structure-label, .designation-div ._structure-label{
+    padding: 0;
+    font-size: 18px;
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+}
+
+.social-items{
+    display: flex;
+}
+.social-items img{   width: 18px;}
+.social-item{
+    margin-right: 15px;
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+    background:#4ca5ff;
+    padding: 10px;
+    transition: .3s all;
+    display: flex;
+    align-items: center;
+   
+}
+
+.social-item-title{
+    display: none;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #fff;
+    transition: .3s all;
+}
+.social-item:hover{
+    width: 100px;
+}
+.social-item:hover .social-item-title{
+    display: block;
+}
+   
+.intro-section-left {
+    /* flex: 1; */
+    /* padding-left: 5rem; */
+    width: 40%;
+
+}
+.intro-section-left img{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .intro-section-right h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .Into-section-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-section-left{
+        width: 90%;
+    }
+    
+}
